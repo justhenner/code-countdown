@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Code Countdown</title>
 </head>
 <body>
     <h1>Code Countdown</h1>
     <div class="game">
-        <div id="question">
+        <div class="container-fluid" id="question">
             <p id="timer">Time's Ticking: <span id="seconds">60</span></p>
-            <button id="start">Start</button>
-            <p id="question-text"></p>
+            <button type="button" class="btn btn-success" id="start">Start</button>
+            <p id="question-text">Question Placeholder</p>
+            <container>
+                <button type="button" class="btn btn-primary wrong" id="wrongOptionOne"></button>
+                <button type="button" class="btn btn-primary wrong" id="wrongOptionTwo"></button>
+                <button type="button" class="btn btn-primary wrong" id="wrongOptionThree"></button>
+                <button type="button" class="btn btn-primary right" id="rightOptionOne"></button>
+            </container>
         </div>
-        <div id="scores"
+
+        <div id="scores">
 
 
 
@@ -23,7 +31,7 @@
 
 
 
-
+    <script src="jquery-3.6.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

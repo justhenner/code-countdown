@@ -1,0 +1,17 @@
+/* *{
+align-items: center!important;
+} */
+
+/* body {
+    margin: auto!important;
+} */
+
+.wrong{
+    display: block!important;
+    margin: 5px;
+}
+
+.right{
+    display:block!important;
+    margin: 5px;
+}
