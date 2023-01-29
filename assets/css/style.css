@@ -1,17 +1,17 @@
-/* *{
-align-items: center!important;
-} */
-
-/* body {
+*{
     margin: auto!important;
-} */
+}
 
 .wrong{
     display: block!important;
-    margin: 5px;
+    margin: 5px auto!important;
 }
 
 .right{
     display:block!important;
     margin: 5px;
+}
+
+#response{
+    display: none;
 }
