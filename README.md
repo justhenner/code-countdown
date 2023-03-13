@@ -16,10 +16,10 @@
 [Click here to view Deployed Site](https://justhenner.github.io/get-me-a-password/)
 
 ### Answer questions:
-![Alt text](./assets/question.png)
+![Alt text](./assets/images/question.png)
 
 ### Set high scores:
-![Alt text](./assets/highscore.png)
+![Alt text](./assets/images/highscore.png)
 
 ## Table of Contents
 * [Code Snippet](#code-snippet)
@@ -31,11 +31,11 @@
 
 ### countDown() 
 As if answering taking a quiz wasn't reason to be nervous already, the countDown() function below sets up a timer using the setInterval() method in JavaScript to make users perspire just a little more as they ponder away.
-![Alt text](./assets/carbon%20(4).png)
+![Alt text](./assets/images/carbon%20(4).png)
 
 ### answerKey
 Grading made easy. The answerKey variable, an array of objects, below representing a question and its answer is used to display the quiz questions and answer options on a webpage. It goes on to check the user's responses against the correct answers to calculate a score.
-![Alt text](./assets/carbon%20(5).png)
+![Alt text](./assets/images/carbon%20(5).png)
 
 ## Author Info
 
@@ -46,8 +46,6 @@ Grading made easy. The answerKey variable, an array of objects, below representi
 * [GitHub](https://github.com/justhenner)
 
 ## Credits
-
-* Navpreet Ahuja, Tutor
 
 * Study group members
 
