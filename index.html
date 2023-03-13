@@ -5,42 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;600&family=Karla:ital,wght@0,200;0,500;0,700;0,800;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Code Countdown</title>
 </head>
 
 <body>
     <h1>Code Countdown</h1>
-    <div class="game">
-        <div class="container-fluid" id="question">
-            <p id="timer">Time's Ticking: <span id="seconds">60</span></p>
-            <button type="button" class="btn btn-success" id="start">Start</button>
-            <p id="question-text">Question Placeholder</p>
-            <container>
-                <button type="button" class="btn btn-primary wrong" id="wrongOptionOne"></button>
-                <button type="button" class="btn btn-primary wrong" id="wrongOptionTwo"></button>
-                <button type="button" class="btn btn-primary wrong" id="wrongOptionThree"></button>
-                <button type="button" class="btn btn-primary right" id="rightOptionOne"></button>
-            </container>
-        </div>
-        <div class="container-fluid" id="response">
-            <h2>Response</h2>
-            <hr/>
-        </div>
-    </div>
-
-        <div id="scores">
-
-
-
-
-
-
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-            <script src="./assets/js/script.js"></script>
+    <h2 id="timer">0</h2>
+    <section id="quiz-container">
+        <h2 id="ques-num" style="visibility: hidden;">holder</h2>
+        <h3 id="question" style="visibility: hidden;">holder</h3>
+        <section id="answer-message" style="display: none;">
+            <h2 id="correct" style="display: none;">Eureka!</h2>
+            <h2 id="wrong" style="display: none;">Womp!</h2>
+        </section>
+        <section id="final-score" style="display: none;">
+            <h2 id="score-percentage">Your Score:</h2>
+            <form name="highscore" action="" method="get">
+                <input type="text" id="initials" value="" placeholder="Inpute your initials">
+                <button id="submit-btn">Submit</button>
+            </form>
+            <h3 id="score-board">High Scores:</h3>
+            <section id="score-container"></section>
+            <h3 id="eset-quiz">Up for another Shot?</h3>
+            <button id="play-again" onclick="playAgain()">Yessir</button>
+            <button id="clear-score" onclick="clearScore()">Fresh Slate</button>
+        </section>
+        <section id="ques-container">
+            <button class="quesbtn" style="visibility: hidden;"></button>
+            <button class="quesbtn" style="visibility: hidden;"></button>
+            <button class="quesbtn" style="visibility: hidden;"></button>
+            <button class="quesbtn" style="visibility: hidden;"></button>
+        </section>
+        <button id="btn-start">GO!</button>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>
