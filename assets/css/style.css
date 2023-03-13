@@ -1,0 +1,171 @@
+:root{
+    --dark: rgb(28, 51, 185);
+    --medium: rgb(7, 79, 174);
+    --light: rgb(203, 16, 220);
+    --complementary-dark: #179ba7;
+    --complementary-light: #96C6D6;
+    --header: 'Karla', sans-serif; 
+    --body: 'Inconsolata', monospace;
+}
+
+body{
+    color: var(--dark);
+    font-family: var(--header);
+    text-align: center;
+    color:blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+    color: white;
+    font-size: 70px;
+    font-family: var(--header);
+}
+
+
+#timer{
+    font-size: 100px;
+    color: var(--dark);
+    position: absolute;
+    top: -90px;
+    right: 10px;
+}
+
+#quiz-container,
+#answer-message,
+#final-score {
+    border: var(--complementary-dark) 2px solid;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--light);
+}
+
+/* When visible, message containers will overlap quiz container */
+#answer-message,
+#final-score{
+    z-index: 1;
+}
+
+#answer-message h2{
+    font-size: 4em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ques-container{
+    margin-top: 20px;
+}
+
+.quesbtn {
+    display: block;
+    margin-left: 60px;
+    margin-top: 15px;
+    width: 70%;
+    text-align: start;
+    border-width: 2px;
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#question{
+    margin-top: 20px;
+    font-size: 1.6em;
+}
+
+#ques-num{
+    font-size: 2em;
+}
+
+#btn-start{
+    width: 170px;
+    height: 80px;
+    border-width: 2px;
+    font-size: 3em;
+    position: absolute;
+    top: 43%;
+    right: 33%;
+    background-color: var(--complementary-light);
+    font-family: var(--body);
+}
+
+button{
+    border-color: var(--dark);
+    background-color: rgb(255, 255, 255);
+}
+
+#final-score button:hover{
+    box-shadow: -4px 4px 10px var(--dark);
+}
+
+#submit-btn{
+    background-color: var(--complementary-light);
+    color: white;
+    background-color: goldenrod;
+}
+
+#initials,
+#submit-btn{
+    border: 2px solid var(--complementary-dark);
+
+}
+
+button:active{
+    border-width: 2.6px;
+    box-shadow: -2px 2px 10px var(--dark);
+}
+
+#score-percentage{
+    font-size: 1.6em;
+    position: absolute;
+    left: 5%;
+}
+
+form{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+#play-again,
+#clear-score{
+    position: absolute;
+    display: inline;
+    bottom: 5%;
+    background-color: var(--medium);
+    height: 10%;
+    width: 20%;
+    font-family: var(--body);
+    font-weight: 800;
+    font-size: 1.3em;
+    color:blanchedalmond;
+}
+
+#play-again{
+    left: 10%;
+}
+
+#clear-score{
+    right: 10%;
+}
+
+#reset-quiz {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 3%;
+    left: 37%;
+}
+
+#score-board{
+    font-size: 2.2em;
+    margin-top: 60px;
+}
+
+
