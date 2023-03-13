@@ -1,20 +1,57 @@
-# code-countdown
+# Code Countdown
 
-## technologies
+## Technology Used 
 
-html
-javascript
-css
+|Technology | Resource |
+|-----|:-----------|
+| Git | [https://git-scm.com/](https://git-scm.com/)  
+| JavaScript | [https://developer.mozilla.org/](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+| jQuery | [https://api.jquery.com/](https://api.jquery.com/) |
+| HTML |[https://developer.mozilla.org/](https://developer.mozilla.org/en-US/docs/Web/HTML)|
+|CSS | [https://developer.mozilla.org/](https://developer.mozilla.org/en-US/docs/Web/CSS)|
 
-## functionality
+## Description
 
-1. user clicks start and a timer begins to run 
-2. simultaneously a multiple choice question is asked
-3. once an answer is submitted another question populates
-4. once all questions have been answered a score is provided 
-5. the user can store their score by inputting their initals
+"Code Countdown: Get Your Yoga On" tests users on their knowledge of yoga asanas, referred to as poses in the west, through a four question timed quiz. If the user answers correctly they will be rewarded with a "Eureka!", but if they don't they'll get a big "Womp!" instead coupled with a timed deduction from the timer that is already ticking. Once all questions have been answered users can choose to save their highscore, play again, and/or simply say nahhhh(maste) to clear the board.
+[Click here to view Deployed Site](https://justhenner.github.io/get-me-a-password/)
 
-## update
+### Answer questions:
+![Alt text](./assets/question.png)
 
-this is assignment is incomplete. 
+### Set high scores:
+![Alt text](./assets/highscore.png)
+
+## Table of Contents
+* [Code Snippet](#code-snippet)
+* [Author Info](#author-info)
+* [Credits](#credits)
+* [License](#license)
+
+## Code Snippet
+
+### countDown() 
+As if answering taking a quiz wasn't reason to be nervous already, the countDown() function below sets up a timer using the setInterval() method in JavaScript to make users perspire just a little more as they ponder away.
+![Alt text](./assets/carbon%20(4).png)
+
+### answerKey
+Grading made easy. The answerKey variable, an array of objects, below representing a question and its answer is used to display the quiz questions and answer options on a webpage. It goes on to check the user's responses against the correct answers to calculate a score.
+![Alt text](./assets/carbon%20(5).png)
+
+## Author Info
+
+### Henner Espinoza
+
+* [LinkedIn](https://www.linkedin.com/in/hennerespinoza)
+
+* [GitHub](https://github.com/justhenner)
+
+## Credits
+
+* Navpreet Ahuja, Tutor
+
+* Study group members
+
+## License
+
+MIT License
 
